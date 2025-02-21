@@ -35,12 +35,12 @@
             </a>
             <ul class="dropdown-menu">
               <li>
-                <router-link class="dropdown-item" to="productList"
+                <router-link class="dropdown-item" to="/productList"
                   >Product List</router-link
                 >
               </li>
               <li>
-                <router-link class="dropdown-item" to="#"
+                <router-link class="dropdown-item" to="/product"
                   >Product Detail</router-link
                 >
               </li>

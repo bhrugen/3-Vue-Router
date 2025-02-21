@@ -1,7 +1,15 @@
 <template>
   <div>
     <h1>Product Detail</h1>
-    <p>Product ID: {{ route.params.productId }}</p>
+    <div v-if="route.params.productId">
+      <p>Product ID: {{ route.params.productId }}</p>
+    </div>
+    <div v-else>
+      <p>No product ID found</p>
+    </div>
+    <div v-if="route.params.categoryId">
+      <p>Category ID: {{ route.params.categoryId }}</p>
+    </div>
   </div>
 </template>
 
