@@ -21,7 +21,9 @@
             >
           </li>
           <li class="nav-item">
-            <router-link class="nav-link" to="/contact">Contact Us</router-link>
+            <router-link class="nav-link" :to="{ name: 'contact' }"
+              >Contact Us</router-link
+            >
           </li>
           <li class="nav-item dropdown">
             <a
