@@ -10,6 +10,7 @@ const router = createRouter({
   routes: [
     { path: "/", component: HomePage },
     { path: "/contact-us", component: Contact, name: "contact" },
+    { path: "/contact", redirect: { name: "contact" } },
     { path: "/productList", component: ProductList },
     {
       path: "/product/:productId/:categoryId?",
