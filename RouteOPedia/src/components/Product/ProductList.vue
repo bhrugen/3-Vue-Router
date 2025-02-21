@@ -2,10 +2,18 @@
   <div>
     <h1>Product List</h1>
     <p>Here is the list of products:</p>
-    <ul>
-      <li>Product 1</li>
-      <li>Product 2</li>
-      <li>Product 3</li>
-    </ul>
+    <div v-for="product in products">
+      <router-link :to="`/product/${product.id}`">
+        {{ product.name }}</router-link
+      >
+    </div>
   </div>
 </template>
+
+<script setup>
+const products = [
+  { id: 1, name: "Product 1" },
+  { id: 2, name: "Product 2" },
+  { id: 3, name: "Product 3" },
+];
+</script>
