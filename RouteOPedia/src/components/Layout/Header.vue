@@ -34,8 +34,16 @@
               Product
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Product List</a></li>
-              <li><a class="dropdown-item" href="#">Product Detail</a></li>
+              <li>
+                <router-link class="dropdown-item" to="productList"
+                  >Product List</router-link
+                >
+              </li>
+              <li>
+                <router-link class="dropdown-item" to="#"
+                  >Product Detail</router-link
+                >
+              </li>
             </ul>
           </li>
         </ul>
