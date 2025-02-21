@@ -3,7 +3,12 @@
     <h1>Product List</h1>
     <p>Here is the list of products:</p>
     <div v-for="product in products">
-      <router-link :to="`/product/${product.id}`">
+      <router-link
+        :to="{
+          name: 'productDetails',
+          params: { productId: product.id, categoryId: 77 },
+        }"
+      >
         {{ product.name }}</router-link
       >
     </div>
